@@ -25,15 +25,15 @@ In this activity you will make a hurdles game using Scratch, where the speed of 
 	set [speed v] to [0]
 	```
 
-	![script](images/greenflag2.svg)
+	![script](images/greenflag2.png)
 
 1. When the `x` key is pressed, if the `last_key` is equal to `z`, then the `speed` variable can be increased and the `last_key` can be set to `x`. This will ensure that the player can't cheat and keep hitting the `x` key to make the speed increase.
 
-	![script](images/x_script.svg)
+	![script](images/x_script.png)
 
 1. The same can be done for the `z` key. In combination, these two scripts force the player to hit the keys _alternately_ in order for the speed variable to be increased.
 
-	![script](images/z_script.svg)
+	![script](images/z_script.png)
 
 1. Now test your script. Click the green glag and then repeatedly press the `x` and `z` keys and watch the speed variable increase.
 
@@ -53,7 +53,7 @@ In this activity you will make a hurdles game using Scratch, where the speed of 
 	switch costume to [run-4 v]
 	wait ([1]/(speed)) secs
 	```
-	![script](images/run1.svg)
+	![script](images/run1.png)
 
 1. If you run this script as it is, you will get an error though. This is because `speed` starts off with a value of `0`. So the computer is trying to calculate `1 / 0` which it can't do. This is a very common error that programmers make in their code. To fix this you can use a conditional to make sure that the calculation only occurs when `speed` is larger that `0`
 
@@ -71,7 +71,7 @@ In this activity you will make a hurdles game using Scratch, where the speed of 
 	wait ([1]/(speed)) secs
 	```
 
-	![script](images/run2.svg)
+	![script](images/run2.png)
 
 1. Now you should be able to test your script and watch the hurdler running on the spot as you press the `x` and `z` keys.
 
@@ -89,7 +89,7 @@ directory and import the jump-1 and jump-2 costumes for your hurdler.
 	set [jumping v] to [False]
 	```
 	
-	![script](images/greenflag3.svg)
+	![script](images/greenflag3.png)
 	
 1. The character should jump when the space bar is pressed. The first thing that happends is the `jumping` variable should be set to `True`. Then the costume can be changed to `jump-1` and the character can glide upwards. Then the costume can be changed to `jump-2` and the character can glide back down again. Finally the `jumping` variable can be returned to `False` to indicate that the jumping animation has finished.
 
@@ -103,7 +103,7 @@ directory and import the jump-1 and jump-2 costumes for your hurdler.
 	set [jumping v] to [False]
 	```
 
-	![script](images/jump.svg)
+	![script](images/jump.png)
 	
 1. Test your script and it might surprise you to see that the character's costume doesn't change. This is becuase the _walk cycle_ you set up previously is still working. You'll need to stop this _walk cycle_ when the character is jumping. To do this, you can use an `and` conditional operator to check that both `speed > 0 and jumping = False` for the _walk cycle_ to work.
 
@@ -121,9 +121,24 @@ directory and import the jump-1 and jump-2 costumes for your hurdler.
 	wait ([1]/(speed)) secs
 	```
 	
-	![script](images/run3.svg)
+	![script](images/run3.png)
 	
 1. Now have a go and you should find your character jumps when the space key is pressed.
 
 ## Slowing Down
+1. At the moment the more you press the `x` and `z` keys, that faster and faster the character runs. There needs to be a way of slowing the hurdler down, so she doesn't win too easily. This can be done on your initial script that sets the starting variables. You just need to add an infinite loop that will check if the speed is greater than 1 and then lower it every few 100ths of a second.
+
+
+``` scratch
+when green flag clicked
+set [last_key v] to [z]
+set [speed v] to [0]
+set [jumping v] to [False]
+forever
+if <(speed) > [1]>
+change [speed v] by [1]
+wait [0.5] secs
+```
+
+![script](images/greenflag4.png)
 
