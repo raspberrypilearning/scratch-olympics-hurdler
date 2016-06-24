@@ -15,7 +15,7 @@ In this activity you will make a hurdles game using Scratch, where the speed of 
 1. The first step is to capture the `x` and `z` keypresses, and use the speed at which the player is pushing the keys, to control the size of a variable
 1. To do this you'll need a variable that stores the last known key press. Create a variable called `last_key` and set it to `z` when the green flag is clicked.
 
-	![script](images/greenflag1.svg)
+	![script](images/greenflag1.png)
 
 1. For the next script you will need a new variable called `speed`, so go ahead and create it now. It can be set to `0` when the game begins.
 
