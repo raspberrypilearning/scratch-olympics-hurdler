@@ -9,10 +9,10 @@ In this activity you will make a hurdles game using Scratch, where the speed of 
 ![ui](images/ui.gif)
 1. Open Scratch by clicking on `Menu` > `Programming` > `Scratch`.
 1. Now, click on the `background` icon and import the new background from the ScratchOlympicsAssets directory. You can then delete the old background.
-1. Click on the icon to import a new sprite and then choose the `run-1` image. Then inport `run-2`, `run-3` and `run-4` as additional costumes. You can then delete the old cat sprite.
+1. Click on the icon to import a new sprite and then choose the `run-1` image. Then import `run-2`, `run-3` and `run-4` as additional costumes. You can then delete the old cat sprite.
 
 ## Capturing the key mashing.
-1. The first step is to capture the `x` and `z` keypresses, and use the speed at which the player is pushing the keys, to control the size of a variable
+1. The first step is to capture the `x` and `z` key presses, and use the speed at which the player is pushing the keys, to control the size of a variable
 1. To do this you'll need a variable that stores the last known key press. Create a variable called `last_key` and set it to `z` when the green flag is clicked.
 
 	![script](images/greenflag1.png)
@@ -35,11 +35,11 @@ In this activity you will make a hurdles game using Scratch, where the speed of 
 
 	![script](images/z_script.png)
 
-1. Now test your script. Click the green glag and then repeatedly press the `x` and `z` keys and watch the speed variable increase.
+1. Now test your script. Click the green flag and then repeatedly press the `x` and `z` keys and watch the speed variable increase.
 
 ## Animating the hurdler.
 
-1. At the moment, the hurdler has 4 costumes as part of what is called a _walk cycle_ (or run cycle in this case). When these costumes are switched the character appears to run on the spot. The time delay between costume switches should depend on the `speed` variable. The higher the `speed` the quicker the costume change should be and therefore the smaller the delay. You can get this effect by _dividing_ `1` byt the `speed` variable to calculate a delay.
+1. At the moment, the hurdler has 4 costumes as part of what is called a _walk cycle_ (or run cycle in this case). When these costumes are switched the character appears to run on the spot. The time delay between costume switches should depend on the `speed` variable. The higher the `speed` the quicker the costume change should be and therefore the smaller the delay. You can get this effect by _dividing_ `1` by the `speed` variable to calculate a delay.
 
 	``` scratch
 	when green flag clicked
@@ -80,7 +80,7 @@ In this activity you will make a hurdles game using Scratch, where the speed of 
 1. Hurdler's need to jump. You'll need a couple more costumes for this part, so look in the runner 
 directory and import the jump-1 and jump-2 costumes for your hurdler.
 
-1. You'll need a new variable for this part called `jumping`. This is becuase other scripts will need to know when the character is jumping. Create the new variable and set it to `False`
+1. You'll need a new variable for this part called `jumping`. This is because other scripts will need to know when the character is jumping. Create the new variable and set it to `False`
 
 	``` scratch
 	when green flag clicked
@@ -91,7 +91,7 @@ directory and import the jump-1 and jump-2 costumes for your hurdler.
 	
 	![script](images/greenflag3.png)
 	
-1. The character should jump when the space bar is pressed. The first thing that happends is the `jumping` variable should be set to `True`. Then the costume can be changed to `jump-1` and the character can glide upwards. Then the costume can be changed to `jump-2` and the character can glide back down again. Finally the `jumping` variable can be returned to `False` to indicate that the jumping animation has finished.
+1. The character should jump when the space bar is pressed. The first thing that happens is the `jumping` variable should be set to `True`. Then the costume can be changed to `jump-1` and the character can glide upwards. Then the costume can be changed to `jump-2` and the character can glide back down again. Finally the `jumping` variable can be returned to `False` to indicate that the jumping animation has finished.
 
 	``` scratch
 	when [space v]key pressed
@@ -105,7 +105,7 @@ directory and import the jump-1 and jump-2 costumes for your hurdler.
 
 	![script](images/jump.png)
 	
-1. Test your script and it might surprise you to see that the character's costume doesn't change. This is becuase the _walk cycle_ you set up previously is still working. You'll need to stop this _walk cycle_ when the character is jumping. To do this, you can use an `and` conditional operator to check that both `speed > 0 and jumping = False` for the _walk cycle_ to work.
+1. Test your script and it might surprise you to see that the character's costume doesn't change. This is because the _walk cycle_ you set up previously is still working. You'll need to stop this _walk cycle_ when the character is jumping. To do this, you can use an `and` conditional operator to check that both `speed > 0 and jumping = False` for the _walk cycle_ to work.
 
 	``` scratch
 	when green flag clicked
@@ -129,16 +129,35 @@ directory and import the jump-1 and jump-2 costumes for your hurdler.
 1. At the moment the more you press the `x` and `z` keys, that faster and faster the character runs. There needs to be a way of slowing the hurdler down, so she doesn't win too easily. This can be done on your initial script that sets the starting variables. You just need to add an infinite loop that will check if the speed is greater than 1 and then lower it every few 100ths of a second.
 
 
-``` scratch
-when green flag clicked
-set [last_key v] to [z]
-set [speed v] to [0]
-set [jumping v] to [False]
-forever
-if <(speed) > [1]>
-change [speed v] by [1]
-wait [0.5] secs
-```
+	``` scratch
+	when green flag clicked
+	set [last_key v] to [z]
+	set [speed v] to [0]
+	set [jumping v] to [False]
+	forever
+	if <(speed) > [1]>
+	change [speed v] by [1]
+	wait [0.5] secs
+	```
 
-![script](images/greenflag4.png)
+	![script](images/greenflag4.png)
 
+## Adding in hurdles
+
+For the final part of this worksheet, you can add in hurdles that the character will have to jump over.
+
+1. Import the hurdle.png sprite from the ScratchOlympicsAssets/items directory.
+1. This sprite needs to begin at the far right of the screen. Then it should continually move left across the screen at a pace that is proportinal to the speed of the character. When it hits the far left of the screen it should instantly appear on the right again.
+
+	``` scratch
+	when green flag clicked
+	go to x: [230] y:[-77]
+	forever
+	if <(speed) > [1]>
+	change x by [-10]
+	wait <[1]/(speed)> secs
+	if <(x position) < [-230]>
+	go to x:[230] y:[-77]
+	```
+	
+	![script](images/hurdles1.png)
