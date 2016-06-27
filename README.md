@@ -2,7 +2,7 @@
 
 ![](cover.gif)
 
-In this resource you will use Scratch to make a hurdling game, which requires the player to either rapidly hit the keyboard to make the hurdler run and jump.
+In this resource you will use Scratch to make a hurdling game, which requires the player to rapidly hit the keyboard to make the hurdler run and jump.
 
 ## Licence
 
