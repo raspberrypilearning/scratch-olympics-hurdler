@@ -223,6 +223,7 @@ At the moment the runner can just plough straight through the hurdles. She needs
 	show
 	wait ([1]/(speed)) secs
 	change x by [-10]
+	end
 	if <touching [Sprite2 v]?>
 	wait [0.2] secs
 	stop [all]
