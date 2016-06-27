@@ -153,6 +153,7 @@ For the final part of this worksheet, you can add in hurdles that the character 
 
 1. Import the hurdle.png sprite from the `assets`/items directory.
 1. This sprite needs to begin at the far right of the screen. Then it should continually move left across the screen at a pace that is proportional to the speed of the character. When it hits the far left of the screen it should instantly appear on the right again.
+
    <!--
 	``` scratch
 	when green flag clicked
