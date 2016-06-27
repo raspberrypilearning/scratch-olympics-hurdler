@@ -1,1 +1,1 @@
-In this resource you will use Scratch to make a weightlifting game, which requires the player to either rapidly hit the keyboard or buttons to make the weightlifter compete.
+In this resource you will use Scratch to make a hurlding game, which requires the player to either rapidly hit the keyboard to make the hurdler run, and use expert timing to make them jump at the right time.
