@@ -27,6 +27,7 @@ In this activity you will make a hurdles game using Scratch, where the speed of 
 	set [speed v] to [0]
 	```
     -->
+	
 	![script](images/greenflag2.png)
 
 1. When the `x` key is pressed, if the `last_key` is equal to `z`, then the `speed` variable can be increased and the `last_key` can be set to `x`. This will ensure that the player can't cheat and keep hitting the `x` key to make the speed increase.
@@ -89,7 +90,7 @@ directory and import the jump-1 and jump-2 costumes for your hurdler.
 
 1. You'll need a new variable for this part called `jumping`. This is because other scripts will need to know when the character is jumping. Create the new variable and set it to `False`.
 
-        <!--
+	<!--
 	``` scratch
 	when green flag clicked
 	set [last_key v] to [z]
@@ -102,7 +103,7 @@ directory and import the jump-1 and jump-2 costumes for your hurdler.
 	
 1. The character should jump when the space bar is pressed. The first thing that happens is the `jumping` variable should be set to `True`. Then the costume can be changed to `jump-1` and the character can glide upwards. Then the costume can be changed to `jump-2` and the character can glide back down again. Finally the `jumping` variable can be returned to `False` to indicate that the jumping animation has finished.
 
-        <!--
+	<!--
 	``` scratch
 	when [space v]key pressed
 	set [jumping v] to [True]
@@ -163,7 +164,7 @@ For the final part of this worksheet, you can add in hurdles that the character 
 1. Import the hurdle.png sprite from the `assets`/items directory.
 1. This sprite needs to begin at the far right of the screen. Then it should continually move left across the screen at a pace that is proportional to the speed of the character. When it hits the far left of the screen it should instantly appear on the right again.
 
-        <!--
+	<!--
 	``` scratch
 	when green flag clicked
 	go to x: [230] y:[-77]
