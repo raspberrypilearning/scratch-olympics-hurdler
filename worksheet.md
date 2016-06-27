@@ -96,6 +96,7 @@ directory and import the jump-1 and jump-2 costumes for your hurdler.
 	![script](images/greenflag3.png)
 	
 1. The character should jump when the space bar is pressed. The first thing that happens is the `jumping` variable should be set to `True`. Then the costume can be changed to `jump-1` and the character can glide upwards. Then the costume can be changed to `jump-2` and the character can glide back down again. Finally the `jumping` variable can be returned to `False` to indicate that the jumping animation has finished.
+
    <!--
 	``` scratch
 	when [space v]key pressed
@@ -111,7 +112,8 @@ directory and import the jump-1 and jump-2 costumes for your hurdler.
 	![script](images/jump.png)
 	
 1. Test your script and it might surprise you to see that the character's costume doesn't change. This is because the _walk cycle_ you set up previously is still working. You'll need to stop this _walk cycle_ when the character is jumping. To do this, you can use an `and` conditional operator to check that both `speed > 0 and jumping = False` for the _walk cycle_ to work.
-   <!--
+
+	<!--
 	``` scratch
 	when green flag clicked
 	forever
