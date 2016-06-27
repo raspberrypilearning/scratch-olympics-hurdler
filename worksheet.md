@@ -235,6 +235,7 @@ At the moment the runner can just plough straight through the hurdles. She needs
 	-->
 	
 	![script](images/finish2.png)
+	
 ## What Next
 - Have a play at your game, or let one of your friends have a go.
 - Now move on to [worksheet2](worksheet2.md) to see how you can add some extra features to your game to make it a little more interesting and fun.
