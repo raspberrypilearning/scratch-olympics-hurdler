@@ -19,6 +19,7 @@ In this activity you will make a hurdles game using Scratch, where the speed of 
 	![script](images/greenflag1.png)
 
 1. For the next script you will need a new variable called `speed`, so go ahead and create it now. It can be set to `0` when the game begins.
+
     <!--
 	``` scratch
 	when green flag clicked
@@ -56,6 +57,7 @@ In this activity you will make a hurdles game using Scratch, where the speed of 
 	wait ([1]/(speed)) secs
 	```
 	-->
+	
 	![script](images/run1.png)
 
 1. If you run this script as it is, you will get an error though. This is because `speed` starts off with a value of `0`. So the computer is trying to calculate `1 / 0` which it can't do. This is a very common error that programmers make in their code. To fix this you can use a conditional to make sure that the calculation only occurs when `speed` is larger that `0`.
@@ -75,6 +77,7 @@ In this activity you will make a hurdles game using Scratch, where the speed of 
 	wait ([1]/(speed)) secs
 	```
 	-->
+	
 	![script](images/run2.png)
 
 1. Now you should be able to test your script and watch the hurdler running on the spot as you press the `x` and `z` keys.
@@ -85,7 +88,8 @@ In this activity you will make a hurdles game using Scratch, where the speed of 
 directory and import the jump-1 and jump-2 costumes for your hurdler.
 
 1. You'll need a new variable for this part called `jumping`. This is because other scripts will need to know when the character is jumping. Create the new variable and set it to `False`
-    <!--
+
+        <!--
 	``` scratch
 	when green flag clicked
 	set [last_key v] to [z]
@@ -93,11 +97,12 @@ directory and import the jump-1 and jump-2 costumes for your hurdler.
 	set [jumping v] to [False]
 	```
 	-->
+	
 	![script](images/greenflag3.png)
 	
 1. The character should jump when the space bar is pressed. The first thing that happens is the `jumping` variable should be set to `True`. Then the costume can be changed to `jump-1` and the character can glide upwards. Then the costume can be changed to `jump-2` and the character can glide back down again. Finally the `jumping` variable can be returned to `False` to indicate that the jumping animation has finished.
 
-   <!--
+        <!--
 	``` scratch
 	when [space v]key pressed
 	set [jumping v] to [True]
@@ -127,7 +132,8 @@ directory and import the jump-1 and jump-2 costumes for your hurdler.
 	switch to costume [run-4 v]
 	wait ([1]/(speed)) secs
 	```
-	-->	
+	-->
+	
 	![script](images/run3.png)
 	
 1. Now have a go and you should find your character jumps when the space key is pressed.
@@ -147,6 +153,7 @@ directory and import the jump-1 and jump-2 costumes for your hurdler.
 	wait [0.5] secs
 	```
 	-->
+	
 	![script](images/greenflag4.png)
 
 ## Adding in hurdles
@@ -156,7 +163,7 @@ For the final part of this worksheet, you can add in hurdles that the character 
 1. Import the hurdle.png sprite from the `assets`/items directory.
 1. This sprite needs to begin at the far right of the screen. Then it should continually move left across the screen at a pace that is proportional to the speed of the character. When it hits the far left of the screen it should instantly appear on the right again.
 
-   <!--
+        <!--
 	``` scratch
 	when green flag clicked
 	go to x: [230] y:[-77]
@@ -168,6 +175,7 @@ For the final part of this worksheet, you can add in hurdles that the character 
 	go to x:[230] y:[-77]
 	```
 	-->
+	
 	![script](images/hurdles1.png)
 
 ## Making the hurdles an obstacle
