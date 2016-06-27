@@ -41,7 +41,8 @@ In this activity you will make a hurdles game using Scratch, where the speed of 
 ## Animating the hurdler.
 
 1. At the moment, the hurdler has 4 costumes as part of what is called a _walk cycle_ (or run cycle in this case). When these costumes are switched the character appears to run on the spot. The time delay between costume switches should depend on the `speed` variable. The higher the `speed` the quicker the costume change should be and therefore the smaller the delay. You can get this effect by _dividing_ `1` by the `speed` variable to calculate a delay.
-    <!--
+
+	<!--
 	``` scratch
 	when green flag clicked
 	forever
@@ -57,8 +58,9 @@ In this activity you will make a hurdles game using Scratch, where the speed of 
 	-->
 	![script](images/run1.png)
 
-1. If you run this script as it is, you will get an error though. This is because `speed` starts off with a value of `0`. So the computer is trying to calculate `1 / 0` which it can't do. This is a very common error that programmers make in their code. To fix this you can use a conditional to make sure that the calculation only occurs when `speed` is larger that `0`
-    <!--
+1. If you run this script as it is, you will get an error though. This is because `speed` starts off with a value of `0`. So the computer is trying to calculate `1 / 0` which it can't do. This is a very common error that programmers make in their code. To fix this you can use a conditional to make sure that the calculation only occurs when `speed` is larger that `0`.
+
+	<!--
 	``` scratch
 	when green flag clicked
 	forever
