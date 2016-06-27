@@ -87,7 +87,7 @@ In this activity you will make a hurdles game using Scratch, where the speed of 
 1. Hurdler's need to jump. You'll need a couple more costumes for this part, so look in the runner 
 directory and import the jump-1 and jump-2 costumes for your hurdler.
 
-1. You'll need a new variable for this part called `jumping`. This is because other scripts will need to know when the character is jumping. Create the new variable and set it to `False`
+1. You'll need a new variable for this part called `jumping`. This is because other scripts will need to know when the character is jumping. Create the new variable and set it to `False`.
 
         <!--
 	``` scratch
