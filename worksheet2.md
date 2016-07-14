@@ -110,7 +110,7 @@ There are three graphics in the `runner` directory that you have not yet used. T
 	```
     -->	
 	
-	![script](images/run4.png)
+![script](images/run4.png)
 
 ## What next?
 
