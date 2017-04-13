@@ -152,7 +152,7 @@ In this activity you will make a hurdles game using Scratch, where the speed of 
 	set [speed v] to [0]
 	set [jumping v] to [False]
 	forever
-	if <(speed) > [1]>
+	if <(speed) > [-1]>
 	change [speed v] by [1]
 	wait [0.5] secs
 	```
