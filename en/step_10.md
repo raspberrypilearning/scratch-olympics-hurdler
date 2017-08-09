@@ -14,12 +14,10 @@ At the moment the runner can just plough straight through the hurdles. She needs
 - If all those conditions are met, then she must have hit the hurdle and her speed can be dropped.
 
 	<!--
-	``` scratch
 	when green flag clicked
 	forever
 	if <<(jumping)=[False]>and<<(x position) > (([x position v] of [Sprite3 v])- [5])> and <(x position) < (([x position v] of [Sprite3 v]) + [5])>>>
 	set [speed V] to [2]
-	```
 	-->
 
 	![script](images/collide.png)

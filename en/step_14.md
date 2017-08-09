@@ -8,7 +8,6 @@ There are three graphics in the `runner` directory that you have not yet used. T
 - Now you can add in a new script to start the game. When the `green flag` is clicked, the starting costumes can be animated, before the script `broadcasts` start to indicate the game can begin.
 
 	<!--
-	``` scratch
 	when green flag clicked
 	switch costume to [start-1 v]
 	wait [1] secs
@@ -17,14 +16,12 @@ There are three graphics in the `runner` directory that you have not yet used. T
 	switch costume to [start-3 v]
 	wait [0.5] secs
 	broadcast [start v]
-	```
 	-->
 	![script](images/start1.png)
 
 - Now you need to edit the main animation loop so that it starts on the broadcast, rather than on the green flag being clicked.
 
     <!--
-	``` scratch
 	when I receive [start v]
 	forever
 	if <<(speed) > [0]>and<(jumping) = [False]>>
@@ -36,7 +33,6 @@ There are three graphics in the `runner` directory that you have not yet used. T
 	wait ([1]/(speed)) secs
 	switch to costume [run-4 v]
 	wait ([1]/(speed)) secs
-	```
     -->	
 	
 ![script](images/run4.png)
