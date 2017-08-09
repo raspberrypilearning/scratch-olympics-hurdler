@@ -19,21 +19,19 @@
 
 - If you run this script as it is, you'll get an error, because `speed` starts off with a value of `0`. This means the computer is trying to calculate `1 / 0`, which it can't do. It's a very common error that programmers make in their code. To fix this, you can use a conditional to make sure that the calculation only occurs when `speed` is larger than `0`.
 
-<!--
-``` scratch
-when green flag clicked
-forever
-if <(speed) > [0]>
-switch to costume [run-1 v]
-wait ([1]/(speed)) secs
-switch to costume [run-2 v]
-wait ([1]/(speed)) secs
-switch to costume [run-3 v]
-wait ([1]/(speed)) secs
-switch to costume [run-4 v]
-wait ([1]/(speed)) secs
-```
--->
+	<!--
+	when green flag clicked
+	forever
+	if <(speed) > [0]>
+	switch to costume [run-1 v]
+	wait ([1]/(speed)) secs
+	switch to costume [run-2 v]
+	wait ([1]/(speed)) secs
+	switch to costume [run-3 v]
+	wait ([1]/(speed)) secs
+	switch to costume [run-4 v]
+	wait ([1]/(speed)) secs
+	-->
 	
 	![script](images/run2.png)
 

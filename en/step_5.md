@@ -11,8 +11,6 @@ when green flag clicked
 set [last_key v] to [z]
 set [speed v] to [0]
 -->
-	
-
 
 - When the `x` key is pressed, if the `last_key` is equal to `z`, then the `speed` variable can be increased and the `last_key` can be set to `x`. This will ensure that the player can't cheat and keep hitting the `x` key to make the speed increase.
 
