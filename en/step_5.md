@@ -5,14 +5,14 @@
 	![script](images/greenflag1.png)
 
 - For the next script you'll need a new variable called `speed`, so go ahead and create it now. It can be set to `0` when the game begins.
-
+	![script](images/greenflag2.png)
 <!--
 when green flag clicked
 set [last_key v] to [z]
 set [speed v] to [0]
 -->
 	
-	![script](images/greenflag2.png)
+
 
 - When the `x` key is pressed, if the `last_key` is equal to `z`, then the `speed` variable can be increased and the `last_key` can be set to `x`. This will ensure that the player can't cheat and keep hitting the `x` key to make the speed increase.
 
