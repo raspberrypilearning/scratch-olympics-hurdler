@@ -1,40 +1,41 @@
-## Making an end to the game
+## Hiding the hurdles
 
-- To finish off a completed game, you need to add in a finishing line. You can find one in the `assets/items` directory.
-- Import this as a new sprite into your Scratch game, and approximately position it into the runner's lane.
-- To start off, you need use a variable to control how far the hurdler has to run. Create a new variable and call it `distance`.
-- The first script to be added to the finish line will set `distance` to `0` when the game begins, position the finish line to the far right of the screen, and hide it. Next, `distance` has to be increased by the `speed` of the runner every second.
+You may have noticed that the hurdles stay on the screen, even when the player is approaching the finishing line. A little change to some of the scripts, and the game can be made more realistic.
 
-	<!--
-	``` scratch
+- The first thing to do is to hide the hurdles when the `distance` variable climbs above a certain value. Click on the hurdles sprite you have imported and then alter the script to include a conditional to check for this. You'll also need to add in a `show` when the script is started.
+
+    <!--
+    ``` scratch
 	when green flag clicked
-	set [distance v] to [0]
-	go to x: [230] y: [-91]
-	hide
-	forever
-	set [distance v] to ((distance) + (speed))
-	wait [1] secs
-	```
-	-->
-
-	![scratch](images/finish1.png)
-
-- Now that the finish line is ready to go, you can make it appear when the value of `distance` hits whatever value you desire (200 in the example below). It can then begin to move across the screen towards the hurdler. When the hurdler touches the finish line, all the game scripts should end.
-
-	<!--
-	``` scratch
-	when green flag clicked
-	forever
-	if <(distance) > [200]>
 	show
-	wait ([1]/(speed)) secs
+	go to x: [230] y:[-77]
+	forever
+	if <(distance) > [160]>
+	hide
+	if <(speed) > [1]>
 	change x by [-10]
-	end
-	if <touching [Sprite2 v]?>
-	wait [0.2] secs
-	stop [all]
+	wait <[1]/(speed)> secs
+	if <(x position) < [-230]>
+	go to x:[230] y:[-77]
+    ```
+    -->
+
+	![script](images/hurdles2.png)
+	
+- Next, the script that slows the player down when they hit the hurdles needs to be stopped at the same `distance`, so the player can't run into invisible hurdles. Click on the hurdler sprite and edit the collision script.
+
+    <!--
+	``` scratch
+	when green flag clicked
+	forever
+	if <(distance) > [160]>
+	stop script
+	if <<(jumping)=[False]>and<<(x position) > (([x position v] of [Sprite3 v])- [5])> and <(x position) < (([x position v] of [Sprite3 v]) + [5])>>>
+	set [speed V] to [2]
 	```
-	-->
-	
-	![script](images/finish2.png)
-	
+    -->
+
+	![script](images/collide2.png)
+
+- Have a play of the game and make sure that the hurdles disappear towards the end. You might need to tweak the variables a little to get the perfect result.
+

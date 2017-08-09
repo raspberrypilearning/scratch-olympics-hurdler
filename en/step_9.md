@@ -1,19 +1,22 @@
-## Slowing down
+## Adding in hurdles
 
-- At the moment, the more you press the `x` and `z` keys, the faster the character runs. There needs to be a way of slowing the hurdler down, so she doesn't win too easily. This can be done on your initial script that sets the starting variables. You just need to add an infinite loop that will check if the speed is greater than 1, and then lower it every few 100ths of a second.
+For the final part of this worksheet, you can add in hurdles that the character will have to jump over.
+
+- Import the hurdle.png sprite from the `assets/items` directory.
+- This sprite needs to begin at the far right of the screen, then it should continually move left across the screen at a pace that's proportional to the speed of the character. When it hits the far left of the screen, it should instantly appear on the right again.
 
 	<!--
 	``` scratch
 	when green flag clicked
-	set [last_key v] to [z]
-	set [speed v] to [0]
-	set [jumping v] to [False]
+	go to x: [230] y:[-77]
 	forever
-	if <(speed) > [-1]>
-	change [speed v] by [1]
-	wait [0.5] secs
+	if <(speed) > [1]>
+	change x by [-10]
+	wait <[1]/(speed)> secs
+	if <(x position) < [-230]>
+	go to x:[230] y:[-77]
 	```
 	-->
 	
-	![script](images/greenflag4.png)
+	![script](images/hurdles1.png)
 

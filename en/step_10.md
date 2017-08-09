@@ -1,22 +1,26 @@
-## Adding in hurdles
+## Making the hurdles an obstacle
 
-For the final part of this worksheet, you can add in hurdles that the character will have to jump over.
+At the moment the runner can just plough straight through the hurdles. She needs to be slowed down if she doesn't jump.
 
-- Import the hurdle.png sprite from the `assets/items` directory.
-- This sprite needs to begin at the far right of the screen, then it should continually move left across the screen at a pace that's proportional to the speed of the character. When it hits the far left of the screen, it should instantly appear on the right again.
+- Back on the hurdler sprite, add in a new `when green flag clicked` block.
+- This next part is a little complicated. The runner should be slowed down if she:
+  1. Isn't jumping
+  1. Has an x position just before the hurdle
+  1. Has an x position just after the hurdle
+- This can be achieved using two `and` logical operators, checking if:
+  1. `jumping = False`
+  1. `x position > x position of hurdle - 5`
+  1. `x position < x position of hurdle + 5`
+- If all those conditions are met, then she must have hit the hurdle and her speed can be dropped.
 
 	<!--
 	``` scratch
 	when green flag clicked
-	go to x: [230] y:[-77]
 	forever
-	if <(speed) > [1]>
-	change x by [-10]
-	wait <[1]/(speed)> secs
-	if <(x position) < [-230]>
-	go to x:[230] y:[-77]
+	if <<(jumping)=[False]>and<<(x position) > (([x position v] of [Sprite3 v])- [5])> and <(x position) < (([x position v] of [Sprite3 v]) + [5])>>>
+	set [speed V] to [2]
 	```
 	-->
-	
-	![script](images/hurdles1.png)
+
+	![script](images/collide.png)
 
