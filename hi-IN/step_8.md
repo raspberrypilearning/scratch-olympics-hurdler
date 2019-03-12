@@ -1,6 +1,6 @@
-## Slowing down
+## गति को धीमा करना
 
-- At the moment, the more you press the `x` and `z` keys, the faster the character runs. There needs to be a way of slowing the hurdler down, so she doesn't win too easily. This can be done on your initial script that sets the starting variables. You just need to add an infinite loop that will check if the speed is greater than 1, and then lower it every few 100ths of a second.
+- फिलहाल, आप `x` और `z` कुंजियों को जितना अधिक दबाते हैं, पात्र उतना अधिक तेज़ी से दौड़ता है। धावक को धीमा करने का कोई तरीका होना चाहिए, ताकि वह बहुत आसानी से न जीत पाए। यह आपकी प्रारंभिक स्क्रिप्ट पर किया जा सकता है जिसमें प्रारंभिक वेरिएबल सेट किए जाते हैं। आपको बस एक अंतरहित लूप जोड़ने की आवश्यकता है जो यह जाँच करेगा कि गति 1 से अधिक है, और फिर इसे हर सेकंड के कुछ 100वें हिस्से पर कम करेगा।
     
     <!--
 when green flag clicked
@@ -13,4 +13,4 @@ change [speed v] by [1]
 wait [0.5] secs
 -->
     
-    ![script](images/greenflag4.png)
+    ![स्क्रिप्ट](images/greenflag4.png)
