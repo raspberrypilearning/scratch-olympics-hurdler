@@ -1,9 +1,9 @@
-## Making an end to the game
+## गेम का अंत बनाना
 
-- To finish off a completed game, you need to add in a finishing line. You can find one in the `assets/items` directory.
-- Import this as a new sprite into your Scratch game, and approximately position it into the runner's lane.
-- To start off, you need use a variable to control how far the hurdler has to run. Create a new variable and call it `distance`.
-- The first script to be added to the finish line will set `distance` to `0` when the game begins, position the finish line to the far right of the screen, and hide it. Next, `distance` has to be increased by the `speed` of the runner every second.
+- किसी पूरे किए गए गेम को समाप्त करने के लिए, आपको समाप्ति की एक पंक्ति को जोड़ना होगा। आपको यह `assets/items` (सामग्री/वस्तुएँ) निर्देशिका में मिल सकती है।
+- इसे अपने Scratch गेम में एक नए स्प्राइट के रूप में आयात करें, और इसे लगभग धावक लेन में रखें।
+- शुरू करने के लिए, आपको यह नियंत्रित करने के लिए एक वेरिएबल का उपयोग करने की आवश्यकता है कि धावक को कितनी दूर तक दौड़ना है। एक नया वेरिएबल बनाएँ और इसका नाम `distance` (दूरी) रखें।
+- फिनिश लाइन में जोड़ी जाने वाली पहली स्क्रिप्ट गेम के शुरू होने पर `distance` (दूरी) को `0` पर सेट करेगी, फिनिश लाइन को स्क्रीन पर दूर दाईं ओर रखेगी, और इसे छुपा देगी। इसके बाद, `distance` (दूरी) को हर सेकंड धावक की `speed` (गति) से बढ़ाना होगा।
     
     <!--
 when green flag clicked
@@ -17,7 +17,7 @@ wait [1] secs
     
     ![scratch](images/finish1.png)
 
-- Now that the finish line is ready to go, you can make it appear when the value of `distance` hits whatever value you desire (200 in the example below). It can then begin to move across the screen towards the hurdler. When the hurdler touches the finish line, all the game scripts should end.
+- अब चूंकि फिनिश लाइन काम करने के लिए तैयार है, आप इसे `distance` (दूरी) के आपके द्वारा अपेक्षित किसी भी मान (नीचे दिए गए उदाहरण में 200) को हिट करने पर प्रकट कर सकते हैं। फिर यह स्क्रीन पर धावक की तरफ बढ़ने लग सकता है। जब धावक फिनिश लाइन को छूता/छूती है, तो सभी गेम स्क्रिप्ट समाप्त हो जानी चाहिए।
     
     <!--
 when green flag clicked
@@ -32,4 +32,4 @@ wait [0.2] secs
 stop [all]
 -->
     
-    ![script](images/finish2.png)
+    ![स्क्रिप्ट](images/finish2.png)
