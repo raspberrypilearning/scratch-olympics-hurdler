@@ -1,16 +1,16 @@
-## What you will make
+## आप क्या बनाएँगे
 
-In this resource you will use Scratch to make a hurdling game, which requires the player to rapidly hit the keyboard to make the hurdler run, and use expert timing to make them jump at the right time.
+इस संसाधन में आप बाधा दौड़ गेम बनाने के लिए Scratch का उपयोग करेंगे, जिसमें खिलाड़ी को धावक को दौड़ाने के लिए कीबोर्ड पर तेजी से हिट करना होता है, और उन्हें सही समय पर कूदने के लिए समय का सूझबूझ से उपयोग करना होता है।
 
-## What you will learn
+## आप क्या सीखेंगे
 
-By creating a Scratch Olympics Hurdler game, you will learn:
+एक Scratch ओलंपिक धावक गेम बनाकर, आप सीखेंगे:
 
-- How to animate costumes in Scratch
-- How to use conditional selection and Boolean operators to make changes in a program
-- How to use conditional selection within loops
-- How to use variables to model speed, distance, and time
+- Scratch में पोशाकों को कैसे एनिमेट करें
+- प्रोग्राम में बदलाव करने के लिए सशर्त चयन और बूलियन ऑपरेटर का उपयोग कैसे करें
+- लूप के भीतर सशर्त चयन का उपयोग कैसे करें
+- गति, दूरी और समय के मॉडल के लिए वेरिएबल का उपयोग कैसे करें
 
-This resource covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://www.raspberrypi.org/curriculum/):
+इस संसाधन में [Raspberry Pi डिजिटल निर्माण पाठ्यक्रम](https://www.raspberrypi.org/curriculum/) के निम्नलिखित तत्वों के पहलू शामिल हैं:
 
-- [Combine programming constructs to solve a problem](https://www.raspberrypi.org/curriculum/programming/builder)
+- [किसी समस्या को हल करने के लिए प्रोग्रामिंग संरचनाओं को जोड़ना](https://www.raspberrypi.org/curriculum/programming/builder)
