@@ -1,8 +1,8 @@
-## Jumping
+## जंपिंग (कूदना)
 
-- Hurdlers need to jump. You'll need a few more costumes for this part, so look in the runner directory and import the `jump-1` and `jump-2` costumes for your hurdler.
+- धावकों को कूदना होता है। आपको इस भाग के लिए कुछ और पोशाकों की आवश्यकता होगी, इसलिए धावक निर्देशिका में देखें और अपने धावक के लिए `कूद-1` और `कूद-2` पोशाकें आयात करें।
 
-- You'll need a new variable for this part called `jumping`. This is because other scripts will need to know when the character is jumping. Create the new variable and set it to `False`.
+- इस भाग के लिए आपको एक नए वेरिएबल की आवश्यकता होगी जिसका नाम `jumping` (कूदना) है। ऐसा इसलिए है क्योंकि अन्य स्क्रिप्ट को यह जानने की आवश्यकता होगी कि पात्र कब कूद रहा है। एक नया वेरिएबल बनाएँ और इसे `False` (गलत) पर सेट करें।
     
     <!--
 when green flag clicked
@@ -11,9 +11,9 @@ set [speed v] to [0]
 set [jumping v] to [False]
 -->
     
-    ![script](images/greenflag3.png)
+    ![स्क्रिप्ट](images/greenflag3.png)
 
-- The character should jump when the space bar is pressed. The first thing that happens is the `jumping` variable should be set to `True`, then the costume can be changed to `jump-1` and the character can glide upwards. Next, the costume can be changed to `jump-2` and the character can glide back down again. Finally, the `jumping` variable can be returned to `False` to indicate that the jumping animation has finished.
+- स्पेस बार दबाए जाने पर पात्र को कूदना चाहिए। इसमें पहली चीज़ होती है `jumping` (कूदना) वेरिएबल को `True` (सही) पर सेट करना, इसके बाद पोशाक को `jump-1` (कूदना-1) पर सेट किया जा सकता है और पात्र ऊपर की ओर ग्लाइड कर सकता है। इसके बाद, पोशाक को `jump-2` (कूद-2) में बदला जा सकता है और पात्र फिर से नीचे ग्लाइड कर सकता है। अंत में, `jumping` (कूदना) वेरिएबल को यह दर्शाने के लिए `False` (गलत) पर वापस किया जा सकता है कि कूदना एनिमेशन समाप्त हो गया है।
     
     <!--
 when [space v]key pressed
@@ -25,9 +25,9 @@ glide [0.5] secs to x: [-104] y [-32]
 set [jumping v] to [False]
 -->
     
-    ![script](images/jump.png)
+    ![स्क्रिप्ट](images/jump.png)
 
-- Test your script; it might surprise you to see that the character's costume doesn't change. This is because the walk cycle you set up previously is still working. You'll need to stop this walk cycle when the character is jumping. To do this, you can use an `and` conditional operator to check that both `speed > 0` and `jumping = False` for the walk cycle to work.
+- अपनी स्क्रिप्ट का परीक्षण करें; आपको यह देखकरआश्चर्य हो सकता है कि पात्र की पोशाक में बदलाव नहीं होता है। ऐसा इसलिए है क्योंकि आपके द्वारा पहले सेट अप किया गया चलने का चक्र अभी भी काम कर रहा है। जब पात्र कूद रहा हो तो आपको इस चलने के चक्र को रोकने की आवश्यकता होगी। ऐसा करने के लिए, आप यह जाँच करने के लिए एक `and` (और) सशर्त ऑपरेटर का उपयोग कर सकते हैं कि `speed > 0` और `jumping = False` दोनों चलने के चक्र के लिए काम करते हैं।
     
     <!--
 when green flag clicked
@@ -43,6 +43,6 @@ switch to costume [run-4 v]
 wait ([1]/(speed)) secs
 -->
     
-    ![script](images/run3.png)
+    ![स्क्रिप्ट](images/run3.png)
 
-- Now have a go and you should find your character jumps when the space key is pressed.
+- अब चलाकर देखें और आपको दिखाई देना चाहिए कि स्पेस कुंजी दबाए जाने पर आपका पात्र कूदता है।
