@@ -1,10 +1,10 @@
-## Breaking the finish line
+## फिनिश लाइन को तोड़ना
 
-You may have noticed a second finish line graphic in the `items` directory, showing a broken finish line. You can use this in your game.
+आपको `items` (आइटम) निर्देशिका में शायद दूसरी फिनिश लाइन का ग्राफ़िक दिखाई दिया हो, जिसमें एक टूटी हुई फिनिश लाइन दिखाई देती है। आप इसे अपने गेम में इस्तेमाल कर सकते हैं।
 
-- Click on the finish line sprite and then click on the *Costumes* tab.
-- Now click on *Import* and choose the `finishline-broke` graphic from the `items` folder in `assets`.
-- Back on the *Scripts* tab, edit the script that makes the finish line appear. You're going to add a *conditional* so that when the finish line is touched by the player, it breaks and the player continues running for a little while.
+- फिनिश लाइन स्प्राइट पर क्लिक करें और फिर *Costumes* (पोशाक) टैब पर क्लिक करें।
+- अब *Import* (आयात) पर क्लिक करें और `assets` (सामग्री) में `items` (वस्तुएँ) फ़ोल्डर में से `finishline-broke` (फिनिशलाइनलाइन-टूटी) ग्राफिक चुनें।
+- वापस *Scripts* (स्क्रिप्ट) टैब पर जाकर, उस स्क्रिप्ट को संपादित करें जिसकी वजह से फिनिश लाइन दिखाई देती है। आप एक *conditional* (शर्त) जोड़ने जा रहे हैं ताकि जब खिलाड़ी फिनिश लाइन को छुए, तो यह टूट जाए और खिलाड़ी थोड़ी देर तक चलता रहे।
     
     <!--
 when green flag clicked
@@ -22,4 +22,4 @@ if <(distance) > [300]>
 stop [all]
 -->
     
-    ![script](images/finish3.png)
+    ![स्क्रिप्ट](images/finish3.png)
