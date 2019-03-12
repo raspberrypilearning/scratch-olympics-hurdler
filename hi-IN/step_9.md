@@ -1,9 +1,9 @@
-## Adding in hurdles
+## बाधाएँ जोड़ना
 
-For the final part of this worksheet, you can add in hurdles that the character will have to jump over.
+इस वर्कशीट के अंतिम भाग के लिए, आप उन बाधाओं को जोड़ सकते हैं जिन पर से पात्र को कूदना होगा।
 
-- Import the hurdle.png sprite from the `assets/items` directory.
-- This sprite needs to begin at the far right of the screen, then it should continually move left across the screen at a pace that's proportional to the speed of the character. When it hits the far left of the screen, it should instantly appear on the right again.
+- `assets/items` (सामग्री/वस्तुएँ) निर्देशिका से hurdle.png sprite आयात करें।
+- इस स्प्राइट को स्क्रीन पर दूर दाईं ओर से शुरू करना होना चाहिए, फिर इसे स्क्रीन पर लगातार बाईं ओर उस गति से चलना चाहिए जो पात्र की गति के समानुपातिक हो। जब यह स्क्रीन पर दूर बाईं ओर तक पहुँच जाए, तो उसे तुरंत दुबारा दाईं ओर दिखाई देना चाहिए।
     
     <!--
 when green flag clicked
@@ -16,4 +16,4 @@ if <(x position) < [-230]>
 go to x:[230] y:[-77]
 -->
     
-    ![script](images/hurdles1.png)
+    ![स्क्रिप्ट](images/hurdles1.png)
