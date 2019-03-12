@@ -1,6 +1,6 @@
-## Animating the hurdler
+## धावक को एनिमेट करना
 
-- At the moment, the hurdler has 4 costumes as part of what's called a *walk cycle* (or run cycle in this case). When these costumes are switched, the character appears to run on the spot. The time delay between costume switches should depend on the `speed` variable. The higher the `speed`, the quicker the costume change should be and therefore the smaller the delay. You can get this effect by dividing `1` by the `speed` variable to calculate a delay.
+- फिलहाल, धावक के पास *चलने के चक्र* (या इस मामले में दौड़ के चक्र) नामक हिस्से के रूप में 4 पोशाकें हैं। जब इन पोशाकों को बदला जाता है, तो पात्र उसी समय दौड़ता हुआ दिखाई देता है। पोशाकों के बदले जाने के बीच समय का विलंब `speed` (गति) वेरिएबल पर निर्भर करेगा। `speed` (गति) जितनी अधिक होगी, पोशाक बदलना उतना ही शीघ्र होना चाहिए और इसलिए देरी कम होनी चाहिए। देरी की गणना करने के लिए आप इस प्रभाव को `1` को `speed` (गति) वेरिएबल से विभाजित करके प्राप्त कर सकते हैं।
     
     <!--
 when green flag clicked
@@ -15,9 +15,9 @@ switch costume to [run-4 v]
 wait ([1]/(speed)) secs
 -->
     
-    ![script](images/run1.png)
+    ![स्क्रिप्ट](images/run1.png)
 
-- If you run this script as it is, you'll get an error, because `speed` starts off with a value of `0`. This means the computer is trying to calculate `1 / 0`, which it can't do. It's a very common error that programmers make in their code. To fix this, you can use a conditional to make sure that the calculation only occurs when `speed` is larger than `0`.
+- यदि आप इस स्क्रिप्ट को इसी रूप में चलाते हैं, तो आपको एक त्रुटि मिलेगी, क्योंकि `speed` (गति) `0` के मान से आरंभ होती है। इसका मतलब है कि कंप्यूटर `1 / 0` की गणना करने का प्रयास कर रहा है, जो यह नहीं कर सकता है। यह एक बहुत ही आम त्रुटि है जिसे प्रोग्रामर अपने कोड में करते हैं। इसे ठीक करने के लिए, आप यह सुनिश्चित करने के लिए एक शर्त का उपयोग कर सकते हैं कि गणना केवल तभी की जाती है जब `speed` (गति) `0` से अधिक हो।
     
     <!--
 when green flag clicked
@@ -33,6 +33,6 @@ switch to costume [run-4 v]
 wait ([1]/(speed)) secs
 -->
     
-    ![script](images/run2.png)
+    ![स्क्रिप्ट](images/run2.png)
 
-- Now you should be able to test your script and watch the hurdler running on the spot as you press the `x` and `z` keys.
+- अब आपको अपनी स्क्रिप्ट का परीक्षण करने में सक्षम होना चाहिए और `x` और `z` कुंजियों को दबाने पर आपको धावक उसी समय चलता हुआ दिखाई देना चाहिए।
