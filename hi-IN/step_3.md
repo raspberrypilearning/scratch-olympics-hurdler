@@ -1,4 +1,4 @@
-## Getting hold of the sprites
+## परियों को पकड़ना
 
-- Download this [zip file](images/assets.zip) to your home directory and unzip its contents.
-- Have a look inside the directory; you should see 4 directories called `background`, `items`, `misc`, `runner`, and `turtle`.
+- अपनी होम निर्देशिका में इस [zip file](images/assets.zip) (ज़िप फ़ाइल) को डाउनलोड करें और इसकी सामग्री को अनज़िप करें।
+- निर्देशिका के अंदर एक नज़र डालें; आपको `background` (पृष्ठभूमि), `items` (आइटम), `misc` (विविध), `runner` (धावक), और `टर्टल` नामक 4 निर्देशिकाएँ दिखाई देनी चाहिए।
