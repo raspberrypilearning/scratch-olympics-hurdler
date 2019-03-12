@@ -1,8 +1,8 @@
-## Hiding the hurdles
+## बाधाएँ छुपाना
 
-You may have noticed that the hurdles stay on the screen, even when the player is approaching the finishing line. A little change to some of the scripts, and the game can be made more realistic.
+आपने देखा होगा कि बाधाएँ स्क्रीन पर रहती हैं, भले ही खिलाड़ी फिनिशिंग लाइन पर पहुँचने वाला/वाली हो। कुछ स्क्रिप्ट्स में थोड़ा सा बदलाव करके, गेम को और वास्तविक बनाया जा सकता है।
 
-- The first thing to do is to hide the hurdles when the `distance` variable climbs above a certain value. Click on the hurdles sprite you have imported and then alter the script to include a conditional to check for this. You'll also need to add in a `show` when the script is started.
+- पहली चीज़ यह करनी होती है कि जब `distance` (दूरी) वेरिएबल किसी निश्चित मान से ऊपर चला जाता है तो बाधाओं को छिपा दिया जाए। आपने जिस बाधा स्प्राइट को आयात किया है उस पर क्लिक करें और फिर स्क्रिप्ट में बदलाव करें ताकि इसकी जाँच करने के लिए एक शर्त को शामिल किया जाए। जब स्क्रिप्ट शुरू होती है तो आपको `show` (दिखाएँ) भी जोड़ना होगा।
     
     <!--
 when green flag clicked
@@ -18,9 +18,9 @@ if <(x position) < [-230]>
 go to x:[230] y:[-77]
 -->
     
-    ![script](images/hurdles2.png)
+    ![स्क्रिप्ट](images/hurdles2.png)
 
-- Next, the script that slows the player down when they hit the hurdles needs to be stopped at the same `distance`, so the player can't run into invisible hurdles. Click on the hurdler sprite and edit the collision script.
+- इसके बाद, जो स्क्रिप्ट खिलाड़ी के बाधाओं पर हिट करने पर उन्हें धीमा करती है उसे उसी `distance` (दूरी) पर रोकना होगा, ताकि खिलाड़ी अदृश्य बाधाओं में न दौड़ सके। धावक स्प्राइट पर क्लिक करें और टकराव स्क्रिप्ट को संपादित करें।
     
     <!--
 when green flag clicked
@@ -31,6 +31,6 @@ if <<(jumping)=[False]>and<<(x position) > (([x position v] of [Sprite3 v])- [5]
 set [speed V] to [2]
 -->
     
-    ![script](images/collide2.png)
+    ![स्क्रिप्ट](images/collide2.png)
 
-- Have a play of the game and make sure that the hurdles disappear towards the end. You might need to tweak the variables a little to get the perfect result.
+- गेम को चलाकर देखें और सुनिश्चित करें कि अंत में बाधाएँ गायब हो जाती हैं। सही परिणाम प्राप्त करने के लिए आपको वेरिएबल में थोड़ा सुधार करना पड़ सकता है।
