@@ -1,21 +1,21 @@
-## Capturing the key mashing
+## Key mashing (कुंजी मैशिंग) को कैप्चर करना
 
-- The first step is to capture the `x` and `z` key presses, and use the speed at which the player is pushing the keys to control the size of a variable. To do this you'll need a variable that stores the last known key press. Create a variable called `last_key` and set it to `z` when the green flag is clicked.
+- पहला कदम `x` और `z` को कैप्चर करना है, और उस गति का उपयोग करना है जिस गति पर खिलाड़ी किसी वेरिएबल के आकार को नियंत्रित करने के लिए कुंजियों को दबा रहा है। ऐसा करने के लिए आपको एक ऐसे वेरिएबल की ज़रूरत होगी जिसमें अंतिम ज्ञात कुंजी दबाए जाने को संगृहीत किया जाता है। `last_key` नामक एक वेरिएबल बनाएँ और इसे `z` पर सेट करें जब हरे झंडे को क्लिक किया जाता है।
     
-    ![script](images/greenflag1.png)
+    ![स्क्रिप्ट](images/greenflag1.png)
 
-- For the next script you'll need a new variable called `speed`, so go ahead and create it now. It can be set to `0` when the game begins. ![script](images/greenflag2.png) <!--
+- अगली स्क्रिप्ट के लिए आपको `speed` (गति) नामक एक नए वेरिएबल की ज़रूरत होगी, तो आगे बढ़ें और इसे अभी बनाएँ। इसे गेम के शुरू होने पर `0` पर सेट किया जा सकता है। ![स्क्रिप्ट](images/greenflag2.png) <!--
 when green flag clicked
 set [last_key v] to [z]
 set [speed v] to [0]
 -->
 
-- When the `x` key is pressed, if the `last_key` is equal to `z`, then the `speed` variable can be increased and the `last_key` can be set to `x`. This will ensure that the player can't cheat and keep hitting the `x` key to make the speed increase.
+- जब `x` कुंजी को दबाया जाता है, तो यदि `last_key` (अंतिम कुंजी) `z` के बराबर हो, तो `speed` (गति) वेरिएबल को बढ़ाया जा सकता है और `last_key` (अंतिम कुंजी) को `x` पर सेट किया जा सकता है। इससे यह सुनिश्चित होगा कि खिलाड़ी धोखा नहीं दे सकता और गति को बढ़ाने के लिए `x` कुंजी को लगातार दबाना जारी नहीं रख सकता है।
     
-    ![script](images/x_script.png)
+    ![स्क्रिप्ट](images/x_script.png)
 
-- The same can be done for the `z` key. In combination, these two scripts force the player to hit the keys *alternately* in order to increase the speed variable.
+- `z` कुंजी के लिए भी यही किया जा सकता है। संयोजन में, ये दोनों स्क्रिप्ट खिलाड़ी को गति वेरिएबल को बढ़ाने के लिए कुंजियों को *alternately* (एक के बाद एक) दबाने के लिए मजबूर करती हैं।
     
-    ![script](images/z_script.png)
+    ![स्क्रिप्ट](images/z_script.png)
 
-- Now test your script. Click the green flag, then repeatedly press the `x` and `z` keys and watch the speed variable increase.
+- अब अपनी स्क्रिप्ट का परीक्षण करें। हरे रंग के झंडे पर क्लिक करें, फिर `x` और `z` कुंजियों को बार-बार दबाएँ और गति वेरिएबल को बढ़ते हुए देखें।
