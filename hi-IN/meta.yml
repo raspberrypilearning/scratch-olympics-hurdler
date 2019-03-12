@@ -1,0 +1,49 @@
+---
+title: Scratch ओलंपिक धावक
+hero_image: images/banner.png
+description: स्क्रैच में एक हर्डलर गेम
+original_url: https://raspberrypi.org/learning/scratch-olympics-hurdler
+theme: नारंगी
+duration: 2
+listed: false
+ingredient: false
+copyedit: true
+curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
+interests: गेम
+technologies: scratch (स्क्रैच)
+site_areas: प्रोजेक्ट
+hardware: ''
+software: scratch (स्क्रैच)
+version: 3
+last_tested: 2017-01-01
+steps:
+  - 
+    title: परिचय
+  - 
+    title: आपको किन चीज़ों की आवश्यकता होगी
+  - 
+    title: परियों को पकड़ना
+  - 
+    title: सामग्री सेट अप करना
+  - 
+    title: Key mashing (कुंजी मैशिंग) को कैप्चर करना
+  - 
+    title: धावक को एनिमेट करना
+  - 
+    title: जंपिंग
+  - 
+    title: गति को धीमा करना
+  - 
+    title: बाधाएँ जोड़ना
+  - 
+    title: बाधाओं को एक अवरोध बनाना
+  - 
+    title: गेम का अंत बनाना
+  - 
+    title: बाधाएँ छुपाना
+  - 
+    title: फिनिश लाइन तोड़ना
+  - 
+    title: आरंभ को सेट अप करना
+  - 
+    title: आगे क्या?
