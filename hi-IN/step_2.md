@@ -1,9 +1,9 @@
-## What you will need
+## आपको किन चीज़ों की आवश्यकता होगी
 
-### Hardware
+### हार्डवेयर
 
-- An internet connected computer
+- इंटरनेट से जुड़ा कंप्यूटर
 
-### Software
+### सॉफ्टवेयर
 
 - Scratch 1.4
