@@ -1,11 +1,11 @@
-## Setting up the start
+## आरंभ को सेट अप करना
 
-There are three graphics in the `runner` directory that you have not yet used. These are called `start-1`, `start-2`, and `start-3`. You can use these at the beginning of the game, to start the player off.
+`runner` (धावक) निर्देशिका में तीन ग्राफिक्स हैं जिनका आपने अभी तक उपयोग नहीं किया है। इनका नाम `start-1`, `start-2`, और `start-3` है। खिलाड़ी को शुरू करने के लिए, आप इनका उपयोग गेम के आरंभ में कर सकते हैं।
 
-- Click on the hurdler sprite and then *Costumes*.
-- Now import the three *starting* costumes for the hurdler.
-- Click back on the *Scripts* tab.
-- Now you can add in a new script to start the game. When the `green flag` is clicked, the starting costumes can be animated, before the script `broadcasts` start to indicate the game can begin.
+- धावक स्प्राइट पर क्लिक करें और फिर *Costumes* (पोशाक) पर।
+- अब धावक के लिए तीन *starting* (शुरूआती) पोशाकें आयात करें।
+- वापस *Scripts* (स्क्रिप्ट) टैब पर क्लिक करें।
+- अब आप गेम शुरू करने के लिए एक नई स्क्रिप्ट जोड़ सकते हैं। जब `green flag` (हरा झंडा) पर क्लिक किया जाता है, तो प्रारंभिक पोशाकों को एनिमेट किया जा सकता है, इससे पहले कि स्क्रिप्ट `broadcasts` (प्रसारण) यह दर्शाना शुरू करे कि गेम शुरू हो सकती है।
     
     <!--
 when green flag clicked
@@ -18,9 +18,9 @@ wait [0.5] secs
 broadcast [start v]
 -->
     
-    ![script](images/start1.png)
+    ![स्क्रिप्ट](images/start1.png)
 
-- Now you need to edit the main animation loop so that it starts on the broadcast, rather than on the green flag being clicked.
+- अब आपको मुख्य एनिमेशन लूप को संपादित करने की आवश्यकता है ताकि यह हरे रंग के झंडे पर क्लिक किए जाने के बजाय प्रसारण पर शुरू हो।
     
     <!--
 when I receive [start v]
@@ -36,4 +36,4 @@ switch to costume [run-4 v]
 wait ([1]/(speed)) secs
 -->
 
-![script](images/run4.png)
+![स्क्रिप्ट](images/run4.png)
