@@ -17,6 +17,7 @@ There are three graphics in the `runner` directory that you have not yet used. T
 	wait [0.5] secs
 	broadcast [start v]
 	-->
+	
 	![script](images/start1.png)
 
 - Now you need to edit the main animation loop so that it starts on the broadcast, rather than on the green flag being clicked.
