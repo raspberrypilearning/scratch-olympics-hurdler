@@ -5,7 +5,9 @@
 	![script](images/greenflag1.png)
 
 - For the next script you'll need a new variable called `speed`, so go ahead and create it now. It can be set to `0` when the game begins.
+
 	![script](images/greenflag2.png)
+	
 <!--
 when green flag clicked
 set [last_key v] to [z]
