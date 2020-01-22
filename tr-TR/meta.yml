@@ -1,0 +1,49 @@
+---
+title: Scratch Olympics Hurdler
+hero_image: images / banner.png
+description: A hurdler game in Scratch
+original_url: https://raspberrypi.org/learning/scratch-olympics-hurdler
+theme: turuncu
+duration: 2
+listed: false
+ingredient: false
+copyedit: true
+curriculum: 2, tasarım-0, programlama-2, phys-comp-0, üretim-0, topluluk-0
+interests: oyunlar
+technologies: scratch
+site_areas: projects
+hardware: ''
+software: scratch
+version: 3
+last_tested: 2017-01-01
+steps:
+  - 
+    title: Giriş
+  - 
+    title: İhtiyacınız olanlar
+  - 
+    title: Getting hold of the sprites
+  - 
+    title: Setting up the assets
+  - 
+    title: Capturing the key mashing
+  - 
+    title: Animating the hurdler
+  - 
+    title: Jumping
+  - 
+    title: Slowing down
+  - 
+    title: Adding in hurdles
+  - 
+    title: Making the hurdles an obstacle
+  - 
+    title: Making an end to the game
+  - 
+    title: Hiding the hurdles
+  - 
+    title: Breaking the finish line
+  - 
+    title: Setting up the start
+  - 
+    title: Sırada ne var?
