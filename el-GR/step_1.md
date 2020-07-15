@@ -11,6 +11,6 @@ By creating a Scratch Olympics Hurdler game, you will learn:
 - How to use conditional selection within loops
 - How to use variables to model speed, distance, and time
 
-This resource covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://www.raspberrypi.org/curriculum/):
+Αυτό το έργο καλύπτει στοιχεία από τις ακόλουθες πτυχές του [Προγράμματος Μαθημάτων Ψηφιακής Δημιουργίας του Raspberry Pi](https://www.raspberrypi.org/curriculum/):
 
 - [Συνδύασε δομές προγραμματισμού για να λύσεις ένα πρόβλημα](https://www.raspberrypi.org/curriculum/programming/builder)
