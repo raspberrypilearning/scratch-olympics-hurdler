@@ -1,3 +1,4 @@
+---
 title: Scratch Olympics Hurdler
 hero_image: images/banner.png
 description: A hurdler game in Scratch
@@ -15,9 +16,10 @@ hardware: ''
 software: scratch
 version: 3
 last_tested: 2017-01-01
-steps: 
+steps:
 - title: Introduction
 - title: What you will need
+  completion: engaged
 - title: Getting hold of the sprites
 - title: Setting up the assets
 - title: Capturing the key mashing
@@ -29,5 +31,6 @@ steps:
 - title: Making an end to the game
 - title: Hiding the hurdles
 - title: Breaking the finish line
+  completion: internal
 - title: Setting up the start
 - title: What next?
